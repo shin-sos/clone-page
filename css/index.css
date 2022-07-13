@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+@import url('./common.css');
+
+.slide{
+    width:720px;
+    margin:0px auto;
+
+    /* 고정값 */
+    position: relative;            
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+.slide-warp{
+    margin:0;
+    width:720px;
+    position: relative;
+}
+.slide .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+/* .slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) 
+} */
+.slide .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.slide .slick-slide{
+    /* 개별 배너 */
+    margin:0; 
+    width:720px;
+    float:left;
+    height:1280px;
+}
+.slide .slick-slide  img{width:100%;height:1280px;}
+
+/* next prev */           
+.slide .slick-prev{
+    position: absolute;
+    left:0%; top:50%;
+    z-index: 2;
+}
+.slide .slick-next{
+    position: absolute;
+    right:0; top:50%;
+    z-index: 2; 
+}
+
+/* dots */
+.slide .slick-dots{
+    position: absolute;
+    left:-40%; bottom:5%;
+    width:100%;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+}
+.slide .slick-dots li{display: inline-block;}
+.slide .slick-dots li button{
+    width:15px; height:15px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    /* border:none; */
+    border:2px solid rgb(151, 151, 151);
+    font-size:0;
+    margin:0 10px;
+}
+.slide .slick-dots li.slick-active button{
+    background-color:transparent;
+    border:2px solid #fff;
+    width:20px;
+    height:20px;
+    
+}
+.slide> figure > img{
+    width:720px;
+    height:1280px;
+}
+.ex2>img{
+    width:720px;
+    height:1280px;
+}
+.ex3>img{
+    width:720px;
+    height:1280px;
+}
+
+.slide2>nav>ul>li>img{
+    width:720px;
+    height:1280px;
+}
+.con>img{
+    width:720px;
+    height:1280px;  
+}
+.slide-wrap>p:nth-of-type(1)>b{
+    position: absolute;
+    font-size:40px;
+    color:rgb(255, 255, 255);
+    bottom:-10%; 
+    left:33%;   
+    z-index:2;
+    padding-bottom:20px;
+    border-bottom: 1px solid #fff;
+    width:480px;
+}
+.slide .slick-prev{
+    display:none !important;
+}
+.slide .slick-next{
+    display:none !important;
+}
+.slide-wrap>p:nth-of-type(2){
+    position: absolute;
+    font-size:19px;
+    color:#fff;
+    bottom:-20%;
+    left:33%;
+    z-index:2;
+    line-height: 35px;
+    font-weight: lighter;
+}
+.slide-wrap>a>button{
+    width:60px;
+    height:60px;
+    border:none;
+    color:#fff;
+    background-color:#e42923;
+    border-radius: 100px;
+    font-size:19px;
+    position: absolute;
+    z-index:1;
+    bottom:-19%;
+    left:45%;
+}
+.con{
+    width: 720px;
+    height:1280px;
+    background-color: #F6F6F6;
+}
+.slide-warp1>h2{
+    position: absolute;
+    color:#5A5657;
+    font-size:30px;
+    top:2%;
+    left:5%;
+}
+.slide-warp1>p{
+    position: absolute;
+    color:#5a5657;
+    font-size:16px;
+    top:4%;
+    left:5%;
+    letter-spacing: 10px;
+}
+
+.slide1{
+    width:720px;
+    margin:0px auto;
+
+    /* 고정값 */
+    position: relative;            
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+.slide-warp1{
+    margin:0;
+    width:720px;
+    position: relative;
+}
+.slide1 .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+/* .slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) 
+} */
+.slide1 .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.slide1 .slick-slide{   
+    /* 개별 배너 */
+    margin:0; 
+    width:720px;
+    height:1000px;
+    float:left;
+}
+.slide1 .slick-slide  img{width:300px;   }
+
+/* next prev */           
+.slide1 .slick-prev{
+    position: absolute;
+    left:5%; bottom:5%;
+    z-index: 2;
+    background-image: url("../img/more_btn_i2.png");
+    width:85px;
+    height: 20px;
+    font-size: 0;
+    border:none;
+    background-color: none;
+}
+.slide1 .slick-next{
+    display: none !important;
+}
+
+/* dots */
+.slide1 .slick-dots{
+    position: absolute;
+    right:-30%; bottom:5%;
+    width:100%;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+}
+.slide1 .slick-dots li{display: inline-block;}
+.slide1 .slick-dots li button{
+    width:15px; height:15px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    /* border:none; */
+    border:2px solid rgb(151, 151, 151);
+    font-size:0;
+    margin:0 10px;
+}
+.slide1 .slick-dots li.slick-active button{
+    background-color:transparent;
+    border:2px solid #fff;
+    width:20px;
+    height:20px;
+    
+}
+
+/* 22 */
+
+.slide-warp2>h2{
+    position: absolute;
+    color:#5A5657;
+    font-size:30px;
+    top:2%;
+    left:5%;
+}
+.slide-warp2>p{
+    position: absolute;
+    color:#5a5657;
+    font-size:16px;
+    top:4%;
+    left:5%;
+    letter-spacing: 10px;
+}
+.slide2{
+    width:720px;
+    margin:0s auto;
+
+    /* 고정값 */
+    position: relative;            
+    /* 배너, 버튼, 인디게이터 모든 요소들의 최상위 부모 */
+}
+.slide-warp2{
+    margin:0;
+    width:720px;
+    height: 319px;
+    position: absolute;
+    bottom: 0;
+}
+.slide2 .slick-list{  
+    /* 배너들의 상위요소 */
+    overflow:hidden;  
+}
+/* .slide .slick-track{
+    /* 배너 그룹 및 translateX값으로 이동(스크립트) 
+} */
+.slide2 .slick-track::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.slide2 .slick-slide{   
+    /* 개별 배너 */
+    margin:0; 
+    width:720px;
+    position: relative;
+    float:left;
+
+}
+
+.slide2 .slick-slide  img{
+    width:720px;
+    display: block;
+    bottom: 500px;
+}
+
+/* next prev */           
+.slide2 .slick-prev{
+    display: none !important;
+
+}
+.slide2 .slick-next{
+    display: none !important;
+}
+
+/* dots */
+.slide2 .slick-dots{
+    position: absolute;
+    right:-30%; bottom:5%;
+    width:100%;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+}
+.slide2 .slick-dots li{display: inline-block;}
+.slide2 .slick-dots li button{
+    width:15px; height:15px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    /* border:none; */
+    border:2px solid rgb(151, 151, 151);
+    font-size:0;
+    margin:0 10px;
+}
+.slide2 .slick-dots li.slick-active button{
+    background-color:transparent;
+    border:2px solid #fff;
+    width:20px;
+    height:20px;
+    
+}
+
